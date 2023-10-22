@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List
 from pydantic import BaseModel
 
 
@@ -11,6 +11,7 @@ class MovieBase(BaseModel):
 
 
 class MovieCreate(MovieBase):
+    #id: UUID4
     pass
 
 
