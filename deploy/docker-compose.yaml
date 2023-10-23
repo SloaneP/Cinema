@@ -1,12 +1,15 @@
-version: "3.0"
+version: "2.0"
 
 volumes:
   mongo-data:
 
 services:
   mongo:
-    image: mongo:6.0
+    image: mongo:7.0
     volumes:
       - mongo-data:/data/db
     ports:
       - "27018:27018"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
