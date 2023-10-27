@@ -1,4 +1,6 @@
 **/.venv/*
 .gitattributes
 **/__pycache__/*
-**/mongo-data/*
+
+**/deploy/mongo/data/*
+!**/deploy/mongo/data/.gitkeep
