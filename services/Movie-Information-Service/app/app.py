@@ -7,7 +7,7 @@ from .database.database import MongoDB
 from uuid import UUID
 
 cfg: config.Config = config.load_config()
-MongoDB(mongo_dsn=cfg.mongo_dsn)
+MongoDB(mongo_dsn=str(cfg.mongo_dsn))
 
 app = FastAPI(
     title="Movie Information Service"
